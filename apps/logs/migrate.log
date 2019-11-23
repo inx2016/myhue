@@ -1,0 +1,344 @@
+[11/Jun/2019 18:31:06 ] settings     INFO     Welcome to Hue 4.4.0
+[11/Jun/2019 18:31:06 ] settings     DEBUG    Installed Django modules: DesktopModule(aws: aws),DesktopModule(azure: azure),DesktopModule(hadoop: hadoop),DesktopModule(libanalyze: libanalyze),DesktopModule(liboauth: liboauth),DesktopModule(liboozie: liboozie),DesktopModule(libopenid: libopenid),DesktopModule(librdbms: librdbms),DesktopModule(libsaml: libsaml),DesktopModule(libsentry: libsentry),DesktopModule(libsolr: libsolr),DesktopModule(libzookeeper: libzookeeper),DesktopModule(Hue: desktop),DesktopModule(About: about),DesktopModule(Hive: beeswax),DesktopModule(File Browser: filebrowser),DesktopModule(HBase Browser: hbase),DesktopModule(Help: help),DesktopModule(hive: hive),DesktopModule(Impala: impala),DesktopModule(Job Browser: jobbrowser),DesktopModule(Job Designer: jobsub),DesktopModule(Table Browser: metastore),DesktopModule(Oozie Editor/Dashboard: oozie),DesktopModule(Pig Editor: pig),DesktopModule(Proxy: proxy),DesktopModule(RDBMS UI: rdbms),DesktopModule(Solr Search: search),DesktopModule(Hadoop Security: security),DesktopModule(Spark: spark),DesktopModule(Sqoop: sqoop),DesktopModule(User Admin: useradmin),DesktopModule(ZooKeeper Browser: zookeeper),DesktopModule(Data Importer: indexer),DesktopModule(Metadata: metadata),DesktopModule(Notebook: notebook),DesktopModule(Analytics Dashboards: dashboard),DesktopModule(Kafka: kafka)
+[11/Jun/2019 18:31:06 ] settings     DEBUG    DESKTOP_DB_TEST_NAME SET: /home/inx/PycharmProjects/hue/desktop/desktop-test.db
+[11/Jun/2019 18:31:06 ] settings     DEBUG    DESKTOP_DB_TEST_USER SET: hue_test
+[11/Jun/2019 03:31:06 -0700] decorators   INFO     AXES: BEGIN LOG
+[11/Jun/2019 03:31:06 -0700] decorators   INFO     Using django-axes 2.2.0
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/scanner_parallelism.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/rows_read_skew.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/sort_performance.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/remote_scan_ranges.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/slow_table_sink.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/bytes_read_skew.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/selective_scan.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/metadata_missing.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/join_performance.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/skew.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/scan_performance.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/too_many_columns.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/scanner_filter.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/stats_missing.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/spilling.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/agg_performance.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/scanner_parallelism.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/rows_read_skew.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/sort_performance.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/remote_scan_ranges.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/slow_table_sink.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/bytes_read_skew.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/selective_scan.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/metadata_missing.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/join_performance.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/skew.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/scan_performance.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/too_many_columns.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/scanner_filter.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/stats_missing.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/spilling.json
+[11/Jun/2019 03:31:07 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/agg_performance.json
+[11/Jun/2019 03:31:07 -0700] __init__     INFO     Couldn't import snappy. Support for snappy compression disabled.
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop_auth_views_dt_login ^hue/accounts/login>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^accounts/login/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^accounts/logout/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^profile$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^login/oauth/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^login/oauth_authenticated/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^hue/oidc_failed>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop_views_home2 ^home/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop_views_home ^home2$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^home_embeddable$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop.views.log_view ^logs$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/log_analytics$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/log_js_error$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop.views.dump_config ^desktop/dump_config$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/download_logs$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/get_debug_level>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/set_all_debug>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/reset_all_debug>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^bootstrap.js$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/status_bar/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/debug/is_alive$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/debug/is_idle$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop.views.threads ^desktop/debug/threads$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/debug/memory$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop.views.check_config ^desktop/debug/check_config$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/debug/check_config_ajax$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/log_frontend_event$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^assist_m>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop_views_hue ^hue.*/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^403$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^404$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^500$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^ko_editor>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^ko_metastore>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/globalJsConstants.js>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/topo/(?P<location>\w+)>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/workers/aceSqlLocationWorker.js>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/workers/aceSqlSyntaxWorker.js>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop_views_unsupported ^boohoo$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop_views.index ^$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/tag/add_tag$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/tag/remove_tag$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/doc/tag$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/doc/update_tags$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/doc/get$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/doc/update_permissions>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/open?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/docs/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/move/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/mkdir/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/update/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/delete/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/copy/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/restore/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/share/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/get_config/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/context/namespaces/(?P<interface>[\w\-]+)/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/context/computes/(?P<interface>[\w\-]+)/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/context/clusters/(?P<interface>[\w\-]+)/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop.api2.user_preferences ^desktop/api2/user_preferences(?:/(?P<key>\w+))?/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/export/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/import/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/search/entities/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/search/entities_interactive/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^editor>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/configurations/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/configurations/user/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/configurations/delete/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern useradmin_views_list_for_autocomplete ^desktop/api/users/autocomplete>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/users/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/vcs/contents/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/vcs/authorize/?$>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'desktop.lib.metrics.urls' from '/home/inx/PycharmProjects/hue/desktop/core/src/desktop/lib/metrics/urls.pyc'> (None:None) ^desktop/metrics/?>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/?>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'about.urls' from '/home/inx/PycharmProjects/hue/apps/about/src/about/urls.pyc'> (about:about) ^about/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'beeswax.urls' from '/home/inx/PycharmProjects/hue/apps/beeswax/src/beeswax/urls.pyc'> (beeswax:beeswax) ^beeswax/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'filebrowser.urls' from '/home/inx/PycharmProjects/hue/apps/filebrowser/src/filebrowser/urls.pyc'> (None:None) ^filebrowser/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'hbase.urls' from '/home/inx/PycharmProjects/hue/apps/hbase/src/hbase/urls.pyc'> (hbase:hbase) ^hbase/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'help.urls' from '/home/inx/PycharmProjects/hue/apps/help/src/help/urls.pyc'> (None:None) ^help/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'hive.urls' from '/home/inx/PycharmProjects/hue/apps/hive/src/hive/urls.pyc'> (hive:hive) ^hive/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'impala.urls' from '/home/inx/PycharmProjects/hue/apps/impala/src/impala/urls.pyc'> (impala:impala) ^impala/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'jobbrowser.urls' from '/home/inx/PycharmProjects/hue/apps/jobbrowser/src/jobbrowser/urls.pyc'> (None:None) ^jobbrowser/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'jobsub.urls' from '/home/inx/PycharmProjects/hue/apps/jobsub/src/jobsub/urls.pyc'> (None:None) ^jobsub/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'metastore.urls' from '/home/inx/PycharmProjects/hue/apps/metastore/src/metastore/urls.pyc'> (metastore:metastore) ^metastore/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'oozie.urls' from '/home/inx/PycharmProjects/hue/apps/oozie/src/oozie/urls.pyc'> (oozie:oozie) ^oozie/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'pig.urls' from '/home/inx/PycharmProjects/hue/apps/pig/src/pig/urls.pyc'> (pig:pig) ^pig/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'proxy.urls' from '/home/inx/PycharmProjects/hue/apps/proxy/src/proxy/urls.pyc'> (None:None) ^proxy/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'rdbms.urls' from '/home/inx/PycharmProjects/hue/apps/rdbms/src/rdbms/urls.pyc'> (rdbms:rdbms) ^rdbms/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'search.urls' from '/home/inx/PycharmProjects/hue/apps/search/src/search/urls.pyc'> (search:search) ^search/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'security.urls' from '/home/inx/PycharmProjects/hue/apps/security/src/security/urls.pyc'> (security:security) ^security/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'spark.urls' from '/home/inx/PycharmProjects/hue/apps/spark/src/spark/urls.pyc'> (spark:spark) ^spark/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'sqoop.urls' from '/home/inx/PycharmProjects/hue/apps/sqoop/src/sqoop/urls.pyc'> (sqoop:sqoop) ^sqoop/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'useradmin.urls' from '/home/inx/PycharmProjects/hue/apps/useradmin/src/useradmin/urls.pyc'> (None:None) ^useradmin/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'zookeeper.urls' from '/home/inx/PycharmProjects/hue/apps/zookeeper/src/zookeeper/urls.pyc'> (zookeeper:zookeeper) ^zookeeper/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'indexer.urls' from '/home/inx/PycharmProjects/hue/desktop/libs/indexer/src/indexer/urls.pyc'> (indexer:indexer) ^indexer/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'metadata.urls' from '/home/inx/PycharmProjects/hue/desktop/libs/metadata/src/metadata/urls.pyc'> (metadata:metadata) ^metadata/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'notebook.urls' from '/home/inx/PycharmProjects/hue/desktop/libs/notebook/src/notebook/urls.pyc'> (notebook:notebook) ^notebook/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'dashboard.urls' from '/home/inx/PycharmProjects/hue/desktop/libs/dashboard/src/dashboard/urls.pyc'> (dashboard:dashboard) ^dashboard/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'kafka.urls' from '/home/inx/PycharmProjects/hue/desktop/libs/kafka/src/kafka/urls.pyc'> (kafka:kafka) ^kafka/>
+[11/Jun/2019 03:31:07 -0700] urls         DEBUG    Static pattern: <RegexURLPattern None ^static\/(?P<path>.*)$>
+[11/Jun/2019 03:31:15 -0700] models       INFO     HuePermissions: 35 added, 0 updated, 0 up to date, 0 stale
+[11/Jun/2019 03:31:15 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:15 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:15 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:15 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:15 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:15 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:15 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:16 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:16 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:16 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:16 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:16 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:16 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:16 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:16 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:16 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:16 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:16 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:16 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:16 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:16 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:16 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:16 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:16 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:16 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:16 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:16 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:17 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:17 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:17 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 03:31:17 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[12/Jun/2019 09:58:54 ] settings     INFO     Welcome to Hue 4.4.0
+[12/Jun/2019 09:58:54 ] settings     DEBUG    Installed Django modules: DesktopModule(aws: aws),DesktopModule(azure: azure),DesktopModule(hadoop: hadoop),DesktopModule(libanalyze: libanalyze),DesktopModule(liboauth: liboauth),DesktopModule(liboozie: liboozie),DesktopModule(libopenid: libopenid),DesktopModule(librdbms: librdbms),DesktopModule(libsaml: libsaml),DesktopModule(libsentry: libsentry),DesktopModule(libsolr: libsolr),DesktopModule(libzookeeper: libzookeeper),DesktopModule(Hue: desktop),DesktopModule(About: about),DesktopModule(Hive: beeswax),DesktopModule(File Browser: filebrowser),DesktopModule(HBase Browser: hbase),DesktopModule(Help: help),DesktopModule(hive: hive),DesktopModule(Impala: impala),DesktopModule(Job Browser: jobbrowser),DesktopModule(Job Designer: jobsub),DesktopModule(Table Browser: metastore),DesktopModule(Oozie Editor/Dashboard: oozie),DesktopModule(Pig Editor: pig),DesktopModule(Proxy: proxy),DesktopModule(RDBMS UI: rdbms),DesktopModule(Solr Search: search),DesktopModule(Hadoop Security: security),DesktopModule(Spark: spark),DesktopModule(Sqoop: sqoop),DesktopModule(User Admin: useradmin),DesktopModule(ZooKeeper Browser: zookeeper),DesktopModule(Data Importer: indexer),DesktopModule(Metadata: metadata),DesktopModule(Notebook: notebook),DesktopModule(Analytics Dashboards: dashboard),DesktopModule(Kafka: kafka)
+[12/Jun/2019 09:58:54 ] settings     DEBUG    DESKTOP_DB_TEST_NAME SET: /home/inx/PycharmProjects/hue/desktop/desktop-test.db
+[12/Jun/2019 09:58:54 ] settings     DEBUG    DESKTOP_DB_TEST_USER SET: hue_test
+[11/Jun/2019 18:58:55 -0700] decorators   INFO     AXES: BEGIN LOG
+[11/Jun/2019 18:58:55 -0700] decorators   INFO     Using django-axes 2.2.0
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/scanner_parallelism.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/rows_read_skew.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/sort_performance.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/remote_scan_ranges.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/slow_table_sink.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/bytes_read_skew.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/selective_scan.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/metadata_missing.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/join_performance.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/skew.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/scan_performance.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/too_many_columns.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/scanner_filter.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/stats_missing.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/spilling.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/agg_performance.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/scanner_parallelism.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/rows_read_skew.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/sort_performance.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/remote_scan_ranges.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/slow_table_sink.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/bytes_read_skew.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/selective_scan.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/metadata_missing.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/join_performance.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/skew.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/scan_performance.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/too_many_columns.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/scanner_filter.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/stats_missing.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/spilling.json
+[11/Jun/2019 18:58:55 -0700] rules        DEBUG    Loading file /home/inx/PycharmProjects/hue/desktop/libs/libanalyze/src/libanalyze/../../reasons/agg_performance.json
+[11/Jun/2019 18:58:56 -0700] __init__     INFO     Couldn't import snappy. Support for snappy compression disabled.
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop_auth_views_dt_login ^hue/accounts/login>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^accounts/login/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^accounts/logout/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^profile$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^login/oauth/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^login/oauth_authenticated/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^hue/oidc_failed>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop_views_home2 ^home/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop_views_home ^home2$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^home_embeddable$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop.views.log_view ^logs$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/log_analytics$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/log_js_error$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop.views.dump_config ^desktop/dump_config$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/download_logs$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/get_debug_level>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/set_all_debug>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/reset_all_debug>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^bootstrap.js$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/status_bar/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/debug/is_alive$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/debug/is_idle$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop.views.threads ^desktop/debug/threads$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/debug/memory$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop.views.check_config ^desktop/debug/check_config$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/debug/check_config_ajax$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/log_frontend_event$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^assist_m>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop_views_hue ^hue.*/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^403$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^404$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^500$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^ko_editor>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^ko_metastore>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/globalJsConstants.js>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/topo/(?P<location>\w+)>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/workers/aceSqlLocationWorker.js>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/workers/aceSqlSyntaxWorker.js>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop_views_unsupported ^boohoo$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop_views.index ^$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/tag/add_tag$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/tag/remove_tag$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/doc/tag$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/doc/update_tags$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/doc/get$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/doc/update_permissions>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/open?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/docs/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/move/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/mkdir/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/update/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/delete/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/copy/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/restore/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/share/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/get_config/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/context/namespaces/(?P<interface>[\w\-]+)/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/context/computes/(?P<interface>[\w\-]+)/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/context/clusters/(?P<interface>[\w\-]+)/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern desktop.api2.user_preferences ^desktop/api2/user_preferences(?:/(?P<key>\w+))?/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/export/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api2/doc/import/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/search/entities/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/search/entities_interactive/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^editor>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/configurations/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/configurations/user/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/configurations/delete/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern useradmin_views_list_for_autocomplete ^desktop/api/users/autocomplete>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/users/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/vcs/contents/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLPattern None ^desktop/api/vcs/authorize/?$>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'desktop.lib.metrics.urls' from '/home/inx/PycharmProjects/hue/desktop/core/src/desktop/lib/metrics/urls.pyc'> (None:None) ^desktop/metrics/?>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/?>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'about.urls' from '/home/inx/PycharmProjects/hue/apps/about/src/about/urls.pyc'> (about:about) ^about/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'beeswax.urls' from '/home/inx/PycharmProjects/hue/apps/beeswax/src/beeswax/urls.pyc'> (beeswax:beeswax) ^beeswax/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'filebrowser.urls' from '/home/inx/PycharmProjects/hue/apps/filebrowser/src/filebrowser/urls.pyc'> (None:None) ^filebrowser/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'hbase.urls' from '/home/inx/PycharmProjects/hue/apps/hbase/src/hbase/urls.pyc'> (hbase:hbase) ^hbase/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'help.urls' from '/home/inx/PycharmProjects/hue/apps/help/src/help/urls.pyc'> (None:None) ^help/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'hive.urls' from '/home/inx/PycharmProjects/hue/apps/hive/src/hive/urls.pyc'> (hive:hive) ^hive/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'impala.urls' from '/home/inx/PycharmProjects/hue/apps/impala/src/impala/urls.pyc'> (impala:impala) ^impala/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'jobbrowser.urls' from '/home/inx/PycharmProjects/hue/apps/jobbrowser/src/jobbrowser/urls.pyc'> (None:None) ^jobbrowser/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'jobsub.urls' from '/home/inx/PycharmProjects/hue/apps/jobsub/src/jobsub/urls.pyc'> (None:None) ^jobsub/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'metastore.urls' from '/home/inx/PycharmProjects/hue/apps/metastore/src/metastore/urls.pyc'> (metastore:metastore) ^metastore/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'oozie.urls' from '/home/inx/PycharmProjects/hue/apps/oozie/src/oozie/urls.pyc'> (oozie:oozie) ^oozie/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'pig.urls' from '/home/inx/PycharmProjects/hue/apps/pig/src/pig/urls.pyc'> (pig:pig) ^pig/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'proxy.urls' from '/home/inx/PycharmProjects/hue/apps/proxy/src/proxy/urls.pyc'> (None:None) ^proxy/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'rdbms.urls' from '/home/inx/PycharmProjects/hue/apps/rdbms/src/rdbms/urls.pyc'> (rdbms:rdbms) ^rdbms/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'search.urls' from '/home/inx/PycharmProjects/hue/apps/search/src/search/urls.pyc'> (search:search) ^search/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'security.urls' from '/home/inx/PycharmProjects/hue/apps/security/src/security/urls.pyc'> (security:security) ^security/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'spark.urls' from '/home/inx/PycharmProjects/hue/apps/spark/src/spark/urls.pyc'> (spark:spark) ^spark/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'sqoop.urls' from '/home/inx/PycharmProjects/hue/apps/sqoop/src/sqoop/urls.pyc'> (sqoop:sqoop) ^sqoop/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'useradmin.urls' from '/home/inx/PycharmProjects/hue/apps/useradmin/src/useradmin/urls.pyc'> (None:None) ^useradmin/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'zookeeper.urls' from '/home/inx/PycharmProjects/hue/apps/zookeeper/src/zookeeper/urls.pyc'> (zookeeper:zookeeper) ^zookeeper/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'indexer.urls' from '/home/inx/PycharmProjects/hue/desktop/libs/indexer/src/indexer/urls.pyc'> (indexer:indexer) ^indexer/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'metadata.urls' from '/home/inx/PycharmProjects/hue/desktop/libs/metadata/src/metadata/urls.pyc'> (metadata:metadata) ^metadata/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'notebook.urls' from '/home/inx/PycharmProjects/hue/desktop/libs/notebook/src/notebook/urls.pyc'> (notebook:notebook) ^notebook/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'dashboard.urls' from '/home/inx/PycharmProjects/hue/desktop/libs/dashboard/src/dashboard/urls.pyc'> (dashboard:dashboard) ^dashboard/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Dynamic pattern: <RegexURLResolver <module 'kafka.urls' from '/home/inx/PycharmProjects/hue/desktop/libs/kafka/src/kafka/urls.pyc'> (kafka:kafka) ^kafka/>
+[11/Jun/2019 18:58:56 -0700] urls         DEBUG    Static pattern: <RegexURLPattern None ^static\/(?P<path>.*)$>
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:56 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:57 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:57 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:57 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
+[11/Jun/2019 18:58:57 -0700] models       INFO     HuePermissions: 0 added, 0 updated, 35 up to date, 0 stale
