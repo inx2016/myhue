@@ -1023,14 +1023,14 @@ class Iface(fb303.FacebookService.Iface):
   def get_all_token_identifiers(self):
     pass
 
-  def add_master_key(self, key):
+  def add_main_key(self, key):
     """
     Parameters:
      - key
     """
     pass
 
-  def update_master_key(self, seq_number, key):
+  def update_main_key(self, seq_number, key):
     """
     Parameters:
      - seq_number
@@ -1038,14 +1038,14 @@ class Iface(fb303.FacebookService.Iface):
     """
     pass
 
-  def remove_master_key(self, key_seq):
+  def remove_main_key(self, key_seq):
     """
     Parameters:
      - key_seq
     """
     pass
 
-  def get_master_keys(self):
+  def get_main_keys(self):
     pass
 
   def get_open_txns(self):
@@ -5743,23 +5743,23 @@ class Client(fb303.FacebookService.Client, Iface):
       return result.success
     raise TApplicationException(TApplicationException.MISSING_RESULT, "get_all_token_identifiers failed: unknown result")
 
-  def add_master_key(self, key):
+  def add_main_key(self, key):
     """
     Parameters:
      - key
     """
-    self.send_add_master_key(key)
-    return self.recv_add_master_key()
+    self.send_add_main_key(key)
+    return self.recv_add_main_key()
 
-  def send_add_master_key(self, key):
-    self._oprot.writeMessageBegin('add_master_key', TMessageType.CALL, self._seqid)
-    args = add_master_key_args()
+  def send_add_main_key(self, key):
+    self._oprot.writeMessageBegin('add_main_key', TMessageType.CALL, self._seqid)
+    args = add_main_key_args()
     args.key = key
     args.write(self._oprot)
     self._oprot.writeMessageEnd()
     self._oprot.trans.flush()
 
-  def recv_add_master_key(self):
+  def recv_add_main_key(self):
     iprot = self._iprot
     (fname, mtype, rseqid) = iprot.readMessageBegin()
     if mtype == TMessageType.EXCEPTION:
@@ -5767,34 +5767,34 @@ class Client(fb303.FacebookService.Client, Iface):
       x.read(iprot)
       iprot.readMessageEnd()
       raise x
-    result = add_master_key_result()
+    result = add_main_key_result()
     result.read(iprot)
     iprot.readMessageEnd()
     if result.success is not None:
       return result.success
     if result.o1 is not None:
       raise result.o1
-    raise TApplicationException(TApplicationException.MISSING_RESULT, "add_master_key failed: unknown result")
+    raise TApplicationException(TApplicationException.MISSING_RESULT, "add_main_key failed: unknown result")
 
-  def update_master_key(self, seq_number, key):
+  def update_main_key(self, seq_number, key):
     """
     Parameters:
      - seq_number
      - key
     """
-    self.send_update_master_key(seq_number, key)
-    self.recv_update_master_key()
+    self.send_update_main_key(seq_number, key)
+    self.recv_update_main_key()
 
-  def send_update_master_key(self, seq_number, key):
-    self._oprot.writeMessageBegin('update_master_key', TMessageType.CALL, self._seqid)
-    args = update_master_key_args()
+  def send_update_main_key(self, seq_number, key):
+    self._oprot.writeMessageBegin('update_main_key', TMessageType.CALL, self._seqid)
+    args = update_main_key_args()
     args.seq_number = seq_number
     args.key = key
     args.write(self._oprot)
     self._oprot.writeMessageEnd()
     self._oprot.trans.flush()
 
-  def recv_update_master_key(self):
+  def recv_update_main_key(self):
     iprot = self._iprot
     (fname, mtype, rseqid) = iprot.readMessageBegin()
     if mtype == TMessageType.EXCEPTION:
@@ -5802,7 +5802,7 @@ class Client(fb303.FacebookService.Client, Iface):
       x.read(iprot)
       iprot.readMessageEnd()
       raise x
-    result = update_master_key_result()
+    result = update_main_key_result()
     result.read(iprot)
     iprot.readMessageEnd()
     if result.o1 is not None:
@@ -5811,23 +5811,23 @@ class Client(fb303.FacebookService.Client, Iface):
       raise result.o2
     return
 
-  def remove_master_key(self, key_seq):
+  def remove_main_key(self, key_seq):
     """
     Parameters:
      - key_seq
     """
-    self.send_remove_master_key(key_seq)
-    return self.recv_remove_master_key()
+    self.send_remove_main_key(key_seq)
+    return self.recv_remove_main_key()
 
-  def send_remove_master_key(self, key_seq):
-    self._oprot.writeMessageBegin('remove_master_key', TMessageType.CALL, self._seqid)
-    args = remove_master_key_args()
+  def send_remove_main_key(self, key_seq):
+    self._oprot.writeMessageBegin('remove_main_key', TMessageType.CALL, self._seqid)
+    args = remove_main_key_args()
     args.key_seq = key_seq
     args.write(self._oprot)
     self._oprot.writeMessageEnd()
     self._oprot.trans.flush()
 
-  def recv_remove_master_key(self):
+  def recv_remove_main_key(self):
     iprot = self._iprot
     (fname, mtype, rseqid) = iprot.readMessageBegin()
     if mtype == TMessageType.EXCEPTION:
@@ -5835,25 +5835,25 @@ class Client(fb303.FacebookService.Client, Iface):
       x.read(iprot)
       iprot.readMessageEnd()
       raise x
-    result = remove_master_key_result()
+    result = remove_main_key_result()
     result.read(iprot)
     iprot.readMessageEnd()
     if result.success is not None:
       return result.success
-    raise TApplicationException(TApplicationException.MISSING_RESULT, "remove_master_key failed: unknown result")
+    raise TApplicationException(TApplicationException.MISSING_RESULT, "remove_main_key failed: unknown result")
 
-  def get_master_keys(self):
-    self.send_get_master_keys()
-    return self.recv_get_master_keys()
+  def get_main_keys(self):
+    self.send_get_main_keys()
+    return self.recv_get_main_keys()
 
-  def send_get_master_keys(self):
-    self._oprot.writeMessageBegin('get_master_keys', TMessageType.CALL, self._seqid)
-    args = get_master_keys_args()
+  def send_get_main_keys(self):
+    self._oprot.writeMessageBegin('get_main_keys', TMessageType.CALL, self._seqid)
+    args = get_main_keys_args()
     args.write(self._oprot)
     self._oprot.writeMessageEnd()
     self._oprot.trans.flush()
 
-  def recv_get_master_keys(self):
+  def recv_get_main_keys(self):
     iprot = self._iprot
     (fname, mtype, rseqid) = iprot.readMessageBegin()
     if mtype == TMessageType.EXCEPTION:
@@ -5861,12 +5861,12 @@ class Client(fb303.FacebookService.Client, Iface):
       x.read(iprot)
       iprot.readMessageEnd()
       raise x
-    result = get_master_keys_result()
+    result = get_main_keys_result()
     result.read(iprot)
     iprot.readMessageEnd()
     if result.success is not None:
       return result.success
-    raise TApplicationException(TApplicationException.MISSING_RESULT, "get_master_keys failed: unknown result")
+    raise TApplicationException(TApplicationException.MISSING_RESULT, "get_main_keys failed: unknown result")
 
   def get_open_txns(self):
     self.send_get_open_txns()
@@ -6794,10 +6794,10 @@ class Processor(fb303.FacebookService.Processor, Iface, TProcessor):
     self._processMap["remove_token"] = Processor.process_remove_token
     self._processMap["get_token"] = Processor.process_get_token
     self._processMap["get_all_token_identifiers"] = Processor.process_get_all_token_identifiers
-    self._processMap["add_master_key"] = Processor.process_add_master_key
-    self._processMap["update_master_key"] = Processor.process_update_master_key
-    self._processMap["remove_master_key"] = Processor.process_remove_master_key
-    self._processMap["get_master_keys"] = Processor.process_get_master_keys
+    self._processMap["add_main_key"] = Processor.process_add_main_key
+    self._processMap["update_main_key"] = Processor.process_update_main_key
+    self._processMap["remove_main_key"] = Processor.process_remove_main_key
+    self._processMap["get_main_keys"] = Processor.process_get_main_keys
     self._processMap["get_open_txns"] = Processor.process_get_open_txns
     self._processMap["get_open_txns_info"] = Processor.process_get_open_txns_info
     self._processMap["open_txns"] = Processor.process_open_txns
@@ -9901,13 +9901,13 @@ class Processor(fb303.FacebookService.Processor, Iface, TProcessor):
     oprot.writeMessageEnd()
     oprot.trans.flush()
 
-  def process_add_master_key(self, seqid, iprot, oprot):
-    args = add_master_key_args()
+  def process_add_main_key(self, seqid, iprot, oprot):
+    args = add_main_key_args()
     args.read(iprot)
     iprot.readMessageEnd()
-    result = add_master_key_result()
+    result = add_main_key_result()
     try:
-      result.success = self._handler.add_master_key(args.key)
+      result.success = self._handler.add_main_key(args.key)
       msg_type = TMessageType.REPLY
     except (TTransport.TTransportException, KeyboardInterrupt, SystemExit):
       raise
@@ -9918,18 +9918,18 @@ class Processor(fb303.FacebookService.Processor, Iface, TProcessor):
       msg_type = TMessageType.EXCEPTION
       logging.exception(ex)
       result = TApplicationException(TApplicationException.INTERNAL_ERROR, 'Internal error')
-    oprot.writeMessageBegin("add_master_key", msg_type, seqid)
+    oprot.writeMessageBegin("add_main_key", msg_type, seqid)
     result.write(oprot)
     oprot.writeMessageEnd()
     oprot.trans.flush()
 
-  def process_update_master_key(self, seqid, iprot, oprot):
-    args = update_master_key_args()
+  def process_update_main_key(self, seqid, iprot, oprot):
+    args = update_main_key_args()
     args.read(iprot)
     iprot.readMessageEnd()
-    result = update_master_key_result()
+    result = update_main_key_result()
     try:
-      self._handler.update_master_key(args.seq_number, args.key)
+      self._handler.update_main_key(args.seq_number, args.key)
       msg_type = TMessageType.REPLY
     except (TTransport.TTransportException, KeyboardInterrupt, SystemExit):
       raise
@@ -9943,18 +9943,18 @@ class Processor(fb303.FacebookService.Processor, Iface, TProcessor):
       msg_type = TMessageType.EXCEPTION
       logging.exception(ex)
       result = TApplicationException(TApplicationException.INTERNAL_ERROR, 'Internal error')
-    oprot.writeMessageBegin("update_master_key", msg_type, seqid)
+    oprot.writeMessageBegin("update_main_key", msg_type, seqid)
     result.write(oprot)
     oprot.writeMessageEnd()
     oprot.trans.flush()
 
-  def process_remove_master_key(self, seqid, iprot, oprot):
-    args = remove_master_key_args()
+  def process_remove_main_key(self, seqid, iprot, oprot):
+    args = remove_main_key_args()
     args.read(iprot)
     iprot.readMessageEnd()
-    result = remove_master_key_result()
+    result = remove_main_key_result()
     try:
-      result.success = self._handler.remove_master_key(args.key_seq)
+      result.success = self._handler.remove_main_key(args.key_seq)
       msg_type = TMessageType.REPLY
     except (TTransport.TTransportException, KeyboardInterrupt, SystemExit):
       raise
@@ -9962,18 +9962,18 @@ class Processor(fb303.FacebookService.Processor, Iface, TProcessor):
       msg_type = TMessageType.EXCEPTION
       logging.exception(ex)
       result = TApplicationException(TApplicationException.INTERNAL_ERROR, 'Internal error')
-    oprot.writeMessageBegin("remove_master_key", msg_type, seqid)
+    oprot.writeMessageBegin("remove_main_key", msg_type, seqid)
     result.write(oprot)
     oprot.writeMessageEnd()
     oprot.trans.flush()
 
-  def process_get_master_keys(self, seqid, iprot, oprot):
-    args = get_master_keys_args()
+  def process_get_main_keys(self, seqid, iprot, oprot):
+    args = get_main_keys_args()
     args.read(iprot)
     iprot.readMessageEnd()
-    result = get_master_keys_result()
+    result = get_main_keys_result()
     try:
-      result.success = self._handler.get_master_keys()
+      result.success = self._handler.get_main_keys()
       msg_type = TMessageType.REPLY
     except (TTransport.TTransportException, KeyboardInterrupt, SystemExit):
       raise
@@ -9981,7 +9981,7 @@ class Processor(fb303.FacebookService.Processor, Iface, TProcessor):
       msg_type = TMessageType.EXCEPTION
       logging.exception(ex)
       result = TApplicationException(TApplicationException.INTERNAL_ERROR, 'Internal error')
-    oprot.writeMessageBegin("get_master_keys", msg_type, seqid)
+    oprot.writeMessageBegin("get_main_keys", msg_type, seqid)
     result.write(oprot)
     oprot.writeMessageEnd()
     oprot.trans.flush()
@@ -32130,7 +32130,7 @@ class get_all_token_identifiers_result(object):
   def __ne__(self, other):
     return not (self == other)
 
-class add_master_key_args(object):
+class add_main_key_args(object):
   """
   Attributes:
    - key
@@ -32167,7 +32167,7 @@ class add_master_key_args(object):
     if oprot.__class__ == TBinaryProtocol.TBinaryProtocolAccelerated and self.thrift_spec is not None and fastbinary is not None:
       oprot.trans.write(fastbinary.encode_binary(self, (self.__class__, self.thrift_spec)))
       return
-    oprot.writeStructBegin('add_master_key_args')
+    oprot.writeStructBegin('add_main_key_args')
     if self.key is not None:
       oprot.writeFieldBegin('key', TType.STRING, 1)
       oprot.writeString(self.key)
@@ -32195,7 +32195,7 @@ class add_master_key_args(object):
   def __ne__(self, other):
     return not (self == other)
 
-class add_master_key_result(object):
+class add_main_key_result(object):
   """
   Attributes:
    - success
@@ -32240,7 +32240,7 @@ class add_master_key_result(object):
     if oprot.__class__ == TBinaryProtocol.TBinaryProtocolAccelerated and self.thrift_spec is not None and fastbinary is not None:
       oprot.trans.write(fastbinary.encode_binary(self, (self.__class__, self.thrift_spec)))
       return
-    oprot.writeStructBegin('add_master_key_result')
+    oprot.writeStructBegin('add_main_key_result')
     if self.success is not None:
       oprot.writeFieldBegin('success', TType.I32, 0)
       oprot.writeI32(self.success)
@@ -32273,7 +32273,7 @@ class add_master_key_result(object):
   def __ne__(self, other):
     return not (self == other)
 
-class update_master_key_args(object):
+class update_main_key_args(object):
   """
   Attributes:
    - seq_number
@@ -32318,7 +32318,7 @@ class update_master_key_args(object):
     if oprot.__class__ == TBinaryProtocol.TBinaryProtocolAccelerated and self.thrift_spec is not None and fastbinary is not None:
       oprot.trans.write(fastbinary.encode_binary(self, (self.__class__, self.thrift_spec)))
       return
-    oprot.writeStructBegin('update_master_key_args')
+    oprot.writeStructBegin('update_main_key_args')
     if self.seq_number is not None:
       oprot.writeFieldBegin('seq_number', TType.I32, 1)
       oprot.writeI32(self.seq_number)
@@ -32351,7 +32351,7 @@ class update_master_key_args(object):
   def __ne__(self, other):
     return not (self == other)
 
-class update_master_key_result(object):
+class update_main_key_result(object):
   """
   Attributes:
    - o1
@@ -32398,7 +32398,7 @@ class update_master_key_result(object):
     if oprot.__class__ == TBinaryProtocol.TBinaryProtocolAccelerated and self.thrift_spec is not None and fastbinary is not None:
       oprot.trans.write(fastbinary.encode_binary(self, (self.__class__, self.thrift_spec)))
       return
-    oprot.writeStructBegin('update_master_key_result')
+    oprot.writeStructBegin('update_main_key_result')
     if self.o1 is not None:
       oprot.writeFieldBegin('o1', TType.STRUCT, 1)
       self.o1.write(oprot)
@@ -32431,7 +32431,7 @@ class update_master_key_result(object):
   def __ne__(self, other):
     return not (self == other)
 
-class remove_master_key_args(object):
+class remove_main_key_args(object):
   """
   Attributes:
    - key_seq
@@ -32468,7 +32468,7 @@ class remove_master_key_args(object):
     if oprot.__class__ == TBinaryProtocol.TBinaryProtocolAccelerated and self.thrift_spec is not None and fastbinary is not None:
       oprot.trans.write(fastbinary.encode_binary(self, (self.__class__, self.thrift_spec)))
       return
-    oprot.writeStructBegin('remove_master_key_args')
+    oprot.writeStructBegin('remove_main_key_args')
     if self.key_seq is not None:
       oprot.writeFieldBegin('key_seq', TType.I32, 1)
       oprot.writeI32(self.key_seq)
@@ -32496,7 +32496,7 @@ class remove_master_key_args(object):
   def __ne__(self, other):
     return not (self == other)
 
-class remove_master_key_result(object):
+class remove_main_key_result(object):
   """
   Attributes:
    - success
@@ -32532,7 +32532,7 @@ class remove_master_key_result(object):
     if oprot.__class__ == TBinaryProtocol.TBinaryProtocolAccelerated and self.thrift_spec is not None and fastbinary is not None:
       oprot.trans.write(fastbinary.encode_binary(self, (self.__class__, self.thrift_spec)))
       return
-    oprot.writeStructBegin('remove_master_key_result')
+    oprot.writeStructBegin('remove_main_key_result')
     if self.success is not None:
       oprot.writeFieldBegin('success', TType.BOOL, 0)
       oprot.writeBool(self.success)
@@ -32560,7 +32560,7 @@ class remove_master_key_result(object):
   def __ne__(self, other):
     return not (self == other)
 
-class get_master_keys_args(object):
+class get_main_keys_args(object):
 
   thrift_spec = (
   )
@@ -32583,7 +32583,7 @@ class get_master_keys_args(object):
     if oprot.__class__ == TBinaryProtocol.TBinaryProtocolAccelerated and self.thrift_spec is not None and fastbinary is not None:
       oprot.trans.write(fastbinary.encode_binary(self, (self.__class__, self.thrift_spec)))
       return
-    oprot.writeStructBegin('get_master_keys_args')
+    oprot.writeStructBegin('get_main_keys_args')
     oprot.writeFieldStop()
     oprot.writeStructEnd()
 
@@ -32606,7 +32606,7 @@ class get_master_keys_args(object):
   def __ne__(self, other):
     return not (self == other)
 
-class get_master_keys_result(object):
+class get_main_keys_result(object):
   """
   Attributes:
    - success
@@ -32647,7 +32647,7 @@ class get_master_keys_result(object):
     if oprot.__class__ == TBinaryProtocol.TBinaryProtocolAccelerated and self.thrift_spec is not None and fastbinary is not None:
       oprot.trans.write(fastbinary.encode_binary(self, (self.__class__, self.thrift_spec)))
       return
-    oprot.writeStructBegin('get_master_keys_result')
+    oprot.writeStructBegin('get_main_keys_result')
     if self.success is not None:
       oprot.writeFieldBegin('success', TType.LIST, 0)
       oprot.writeListBegin(TType.STRING, len(self.success))
