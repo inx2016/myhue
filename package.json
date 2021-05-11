@@ -46,7 +46,7 @@
     "leaflet.markercluster": "0.5.0",
     "less": "3.9.0",
     "localforage": "1.7.3",
-    "lodash": "4.17.11",
+    "lodash": "4.17.21",
     "medium-editor": "5.23.3",
     "minimist": "^1.2.0",
     "page": "1.8.6",
